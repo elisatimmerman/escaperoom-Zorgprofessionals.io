@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <title>Escaperoom Vivium</title>
+</head>
+
+<body>
+    <nav>
+        <a class="terug" onclick="history.back()">Terug</a>
+        <a class="stop" href="../index.html">Stop</a>
+    </nav> 
+        <div id="mainDiv">
+            <header>
+                <img class="h1-driehoek-blauw" src="../images/koppen/driehoek-blauw.png" alt="driehoek blauw">
+                <h1 class="kleuren h1-links"><span class="blauw">Wat zijn de</span> 
+                    <span class="zee-groen">symptomen</span> 
+                    <span class="gras-groen">van de</span>
+                    verschillende 
+                    bloeddrukken?
+                </h1>      
+                <hr>
+            </header>
+            
+            <div class="info">
+                <p>
+                    Met je vinger kan je de bloeddruksoort slepen naar het bijbehorende symptoom om deze te verbinden.
+                    </p>
+            </div>  
+        </div>
+
+        <div id="backgroundBlock" class="groene-achtergrond">
+            <div class="grid-container-line">
+                <div id='bloeddruk-soorten' class="aligner">
+                    <button class="blauwe-achtergrond bloeddruk-antwoord" value=0>Hoge bloeddruk</button>
+                    <button class="donkergroene-achtergrond bloeddruk-antwoord" value=1>Lage bloeddruk</button>
+                </div>
+                <div id='symptomen' class="aligner"> 
+                    <button onclick="bloeddrukSymtomsClicked(this.id)" class="bloeddruk-antwoord" id="btnLichtInHetHoofd">Licht in het hoofd</button>
+                    <button onclick="bloeddrukSymtomsClicked(this.id)" class="bloeddruk-antwoord" id="btnVermoeidheid">Vermoeidheid</button>
+                    <button onclick="bloeddrukSymtomsClicked(this.id)" class="bloeddruk-antwoord" id="btnDuizeligheid">Duizeligheid</button>
+                    <button onclick="bloeddrukSymtomsClicked(this.id)" class="bloeddruk-antwoord" id="btnKortademigheid">Kortademigheid</button>
+                    <button onclick="bloeddrukSymtomsClicked(this.id)" class="bloeddruk-antwoord" id="btnFlauwvallen">Flauwvallen</button>
+                    <button onclick="bloeddrukSymtomsClicked(this.id)" class="bloeddruk-antwoord" id="btnWazigZien">Wazig zien</button>
+                    <button onclick="bloeddrukSymtomsClicked(this.id)" class="bloeddruk-antwoord" id="btnMisselijkheidEnBraken">Misselijkheid en braken</button>
+                    <button onclick="bloeddrukSymtomsClicked(this.id)" class="bloeddruk-antwoord" id="btnHoofdpijn">Hoofdpijn</button>
+                    <button onclick="bloeddrukSymtomsClicked(this.id)" class="bloeddruk-antwoord" id="btnRusteloosheid">Rusteloosheid</button>
+                </div>
+            </div>
+            <button class="button-2 bottom-right" id='btnConfirm' onclick="confirmationButtonClicked()" autocomplete="off" disabled="disabled"> Stuur de gegevens
+                <img src="../images/knoppen/driehoek.png" alt="driehoek">
+            </button>
+        </div>
+    
+
+
+    <script src="../script/escaperoom.vivium.js"></script>
+</body>
+
+</html>
