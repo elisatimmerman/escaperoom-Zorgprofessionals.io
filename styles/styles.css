@@ -1,0 +1,1661 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4em;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    font-size: 90%;
+}
+
+html, body {
+    width: 100vw;
+}
+
+/*Fonts*/
+
+h1 {
+    font-weight: normal;
+    font-size: 4em;
+    color: #00257A;
+    margin-top: 0;
+}
+
+.h1-tweede-regel {
+    display: flex;
+}
+
+.kleuren {
+    font-size: 3.75em;
+    color: #BED600;
+    line-height: 1.125em;
+    display: inline;
+}
+
+.blauw {
+    color: #00257A;
+    vertical-align: middle;
+}
+.zee-groen {
+    color: #009B74;
+    display: block;
+    text-align: left;
+}
+.gras-groen {
+    color: #69BE28;
+    display: block;
+    text-align: left;
+}
+.driehoek-blauw {
+    width: 1.563em;
+    margin-right: 0.5em;
+}
+
+.h1-driehoek-blauw {
+    width: 2.5vw;
+    margin-right: 1vw;
+}
+
+hr {
+    width: 5em;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2em;
+    margin: 0.5em 0 0.5em 0;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.65em;
+}
+
+.blok-casus p:first-of-type {
+    font-size: 0.813em;
+}
+
+
+
+.h1-links {
+    width: 120%;
+}
+
+.info p {
+    width: 25vw;
+}
+
+.info p:first-of-type {
+    margin-top: 0;
+}
+
+/*Buttons*/
+
+.button-1 {
+    width: 100%;
+    height: 2.5em;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.125em;
+    color: black;
+    padding: 0.5em;
+    padding-left: 0;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+.button-1 img {
+    width: 0.875em;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    order: -1;
+}
+
+.button-2 {
+    width: 20vw;
+    height: 2.5em;
+    background-color: white;
+    border: 1px solid #00257A;
+    font-weight: bold;
+    font-size: 1.125em;
+    color: black;
+    padding: 0.5em;
+    padding-left: 0;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.button-2:disabled{
+    opacity: 0.2;
+}
+
+.button-2:active {
+    background-color: gray;
+  }
+
+.button-2 img {
+    width: 0.875em;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    order: -1;
+}
+
+.button-3 {
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    border: 1px solid #00257A;
+    font-weight: bold;
+    font-size: 1.125em;
+    color: black;
+    padding: 1em;
+    padding-left: 0;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+}
+.button-3 img {
+    width: 15%;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    order: -1;
+}
+
+.button-4 {
+    width: 20vw;
+    height: 2.5em;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.125em;
+    color: black;
+    padding: 0.5em;
+    padding-left: 0;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.button-4 img {
+    width: 0.875em;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    order: -1;
+}
+
+.bottom-right {
+    bottom: 3.5em; 
+    right: 3.5em; 
+    position: absolute;
+}
+
+.terug {
+    width: 6vw;
+    height: 2.5em;
+    position: absolute;
+    text-decoration: none;
+    color: #919191;
+    font-size: normal;
+    margin: 0;
+    bottom: 4em;
+    border: 1px solid #919191;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+
+.terug-wit {
+    width: 6vw;
+    height: 2.5em;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: normal;
+    margin: 0;
+    bottom: 4em;
+    left: 4em;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.stop {
+    width: 6vw;
+    height: 2.5em;
+    position: absolute;
+    text-decoration: none;
+    color: #919191;
+    font-size: normal;
+    margin: 0;
+    bottom: 8em;
+    border: 1px solid #919191;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.stop-wit {
+    width: 6vw;
+    height: 2.5em;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: normal;
+    margin: 0;
+    bottom: 8em;
+    left: 4em;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.geluidsfragment-wit {
+    width: 5%;
+    position: absolute;
+    top: 4em;
+    left: 4em;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 1em;
+    visibility: hidden;
+}
+
+.geluidsfragment-pauze-wit {
+    width: 5%;
+    position: absolute;
+    top: 4em;
+    left: 4em;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+/*index.html*/
+.beginscherm img {
+    width: 12.813em;
+    position: absolute;
+    right: 4em;
+    top: 4em;
+}
+.beginscherm a {
+    width: auto;
+    font-size: 3em;
+    color: #00257A;
+    text-decoration: none;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/*Beginscherm*/
+.lijnen-kleuren {
+    position: absolute;
+    right: 0;
+    bottom: 4em;
+}
+
+.lijnen-kleuren > .blauw {
+    width: 40vw;
+    border: 3px solid #00257A;
+    border-radius: 3em 0 0 3em;
+}
+
+.lijnen-kleuren > .zee-groen {
+    width: 40vw;
+    border: 3px solid #009B74;
+    border-radius: 3em 0 0 3em;
+}
+
+.lijnen-kleuren > .gras-groen {
+    width: 40vw;
+    border: 3px solid #69BE28;
+    border-radius: 3em 0 0 3em;
+}
+
+.lijnen-kleuren > .lime-groen {
+    width: 40vw;
+    border: 3px solid #BED600;
+    border-radius: 3em 0 0 3em;
+    margin-bottom: 0;
+}
+
+/*Casussen-page*/
+
+.casussen {
+    display: grid;
+    grid-template-columns: 30.6% 30.6% 30.6%;
+    grid-template-rows: auto;
+    column-gap: 4%;
+    row-gap: 4%;
+    /* padding-bottom: 4em; */
+}
+
+.blok-casus {
+    height: auto;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-bottom: 2em;
+    color: white;
+    background-color: #00257A;
+    display: block;
+}
+
+.blok-casus:nth-of-type(2) {
+    background-color: #0066a1;
+}
+
+.blok-casus:nth-of-type(3) {
+    margin-right: 0;
+    background-color: #008b95;
+}
+
+.blok-casus:nth-of-type(4) {
+    background-color: #69BE28;
+    margin-bottom: 4em;
+}
+
+.blok-casus:nth-of-type(5) {
+    background-color: #00257A; 
+    margin-bottom: 4em;
+}
+
+.blok-casus:nth-of-type(6) {
+    margin-right: 0;
+    background-color: #0066a1;
+    margin-bottom: 4em;
+}
+
+.blok-casus > img {
+    display: block;
+    width: calc(100% + 2.5em + 2.5em);
+    margin-left: -2.5em;
+    background-color: #E0DED8;
+}
+
+.blok-casus > hr {
+    width: 4%;
+    margin-top: 6%;
+    margin-bottom: 0;
+    border: 1px solid white;
+}
+
+.blok-casus > p:nth-of-type(2) {
+    width: 90%;
+    line-height: 1.3em;
+    margin-bottom: 10%;
+}
+
+
+/*Bevestigen casus*/
+.casus-bevestigen {
+    align-items: center;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 30.6% 30.6% 30.6%;
+    grid-template-rows: 100%;
+    column-gap: 4%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.casus-bevestigen > .blok-casus {
+    margin-bottom: 0;
+    background-color: #0066a1;
+    flex: 0 32%;
+}
+
+.vraag {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.vraag hr {
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*info-pagina*/
+.info-pagina {
+    background-color: #0066A1;
+    color: white;
+    padding: 4em;
+    margin-left: -4em;
+    margin-top: -4em;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.info-pagina h1 {
+    color: white;
+}
+
+.uitleg {
+    grid-template-columns: 48% 48%;
+    grid-template-rows: auto auto;
+    column-gap: 4%;
+    row-gap: 8%;
+    display: grid;
+}
+
+.uitleg p {
+    line-height: 1.65em;
+}
+
+.uitleg p:first-of-type {
+    margin: 0;
+}
+
+.uitleg p:nth-of-type(2) {
+    margin: 0;
+}
+
+.uitleg p:nth-of-type(3) {
+    margin: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end: 3;
+    grid-row-start: 2;
+}
+
+.uitleg .alinea-links {
+    grid-column-start: 2;
+}
+
+#img-uitleg {
+    height: 40vh;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+
+.uitleg .button-1 {
+    width: 20vw;
+    position: absolute;
+    bottom: 3.5em;
+    right: 3.5em;
+}
+
+/*'slapend' scherm*/
+.slapend-scherm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hints-kader {
+    height: 100vh;
+    width: 33vw;
+    color: white;
+    padding: 4em;
+    background-color: #00257A;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.hints-kader h2 {
+    width: 100%;
+}
+
+.hint-scherm img {
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+}
+
+#mainDiv {
+    display: inline-block;
+    width: 33vw;
+    height:100vh;
+    vertical-align: middle;
+    position: absolute;
+    left: 0; 
+    top: 0;
+    padding: 4em;    
+}
+
+#backgroundBlock {
+    display: flex;
+    height: 100vh;
+    padding: 4em;
+    position: absolute;
+    top: 0;
+    left: 33vw;
+    right: 0; 
+    flex-flow: wrap;
+    align-content: space-between;
+}
+
+.opdracht {
+    display: flex;
+    padding: 4em;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    flex-flow: wrap;
+    align-content: space-between;
+    top: 40%;
+    transform: translateY(-40%);
+    width: 100%;
+}
+
+.groene-achtergrond{
+    background-color: #69BE28 !important;
+    color: white;
+}
+
+.grasgroene-achtergrond{
+    background-color: #BED600 !important;
+    color: white !important;
+}
+
+.blauwe-achtergrond{
+    background-color: #00257A !important;
+    color: white !important;
+}
+.lichtblauw-achtergrond{
+    background-color: #0066A1 !important;
+    color: white !important;
+}
+
+.donkergroene-achtergrond{
+    background-color: #009B74 !important; 
+    color: white !important;
+}
+
+input[type="text"] {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 200;
+    padding: 0.6em 0em 0.6em 0.6em;
+    margin: 0;
+    margin-top: 0.5em;
+    margin-bottom: 3.750em;
+    border: 1px solid gray;
+  }
+
+  input[type="text"]:focus {
+    outline: none;
+    border: 1px solid#00257A;
+}
+
+input[type="text"]:last-of-type {
+    margin-bottom: 0;
+  }
+
+  input[type="text"]::placeholder {
+    color: #919191;
+  }
+
+
+.speech-bubble {
+    position: relative;
+	background: #ffffff;
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #ffffff;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+.antwoordBubbel1{
+    width: 100%; 
+    height: 38vh; 
+    border-radius: 10px; 
+    padding: 2em;
+    color: white;
+    font-size: 1.250em;
+    line-height: 1.65em;
+    position: relative;
+    background-color: #00257A;
+    text-decoration: none;
+}
+
+.antwoordBubbel1:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #00257A;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+    margin-bottom: -20px;
+    
+  }
+
+  .antwoordBubbel2{
+    width: 100%; 
+    height: 38vh;
+    border-radius: 10px;  
+    padding: 2em;
+    color: white;
+    font-size: 1.250em;
+    line-height: 1.65em;
+    position: relative;
+    background-color: #0066a1;
+    text-decoration: none
+}
+
+.antwoordBubbel2:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #0066a1;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+  }
+
+  .antwoordBubbel3{
+    width: 100%; 
+    height: 38vh;
+    border-radius: 10px; 
+    padding: 2em;
+    color: white;
+    font-size: 1.250em;
+    line-height: 1.65em;
+    position: relative;
+    background-color: #008b95;
+    text-decoration: none;
+}
+
+.antwoordBubbel3:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #008b95;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+  }
+
+  .antwoordBubbel4{
+    width: 100%; 
+    height: 38vh;
+    border-radius: 10px; 
+    padding: 2em;
+    color: white;
+    font-size: 1.250em;
+    line-height: 1.65em;
+    position: relative;
+    background-color: #69BE28;
+    text-decoration: none;
+}
+
+.antwoordBubbel4:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #69BE28;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+  }
+
+  
+.antwoordBubbel5{
+    width: 25vw; 
+    height: auto; 
+    min-height: 25vh;
+    border-radius: 10px; 
+    padding: 2em;
+    position: absolute;
+    font-size: 1.250em;
+    line-height: 1.65em;
+    background-color: white;
+    color: black;
+    right: 20vw;
+    top: 4em;
+}
+
+
+.antwoordBubbel5:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+    margin-bottom: -20px;
+}
+
+.antwoordBubbel6 {
+    width: 25vw; 
+    min-height: 30vh; 
+    border-radius: 10px; 
+    padding: 2em;
+    position: relative;
+    font-size: 1.250em;
+    line-height: 1.65em;
+    background-color: white;
+    color: black;
+    top: 4em;
+}
+
+
+.antwoordBubbel6:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 2em;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-left: 0;
+    margin-bottom: -1em;
+}
+
+.antwoordBubbel7 {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 0.625em; 
+    padding: 2em;
+    position: relative;
+    line-height: 1.65em;
+    background-color: #00257A;
+    color: white;
+    margin: 0;
+}
+
+
+.antwoordBubbel7:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 2em;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #00257A;
+	border-bottom: 0;
+	border-left: 0;
+    margin-bottom: -1em;
+}
+
+.antwoordBubbel7 p {
+    margin-top: 0;
+}
+
+.antwoordBubbelAntwoord {
+    width: 100%; 
+    height: 38vh;
+    border-radius: 10px;  
+    padding: 2em;
+    color: white;
+    position: relative;
+    background-color: #0066a1;
+    text-decoration: none;
+}
+
+.antwoordBubbelAntwoord:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #0066a1;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+  }
+
+  .antwoordBubbelAntwoord p {
+      margin-top: 0;
+  }
+
+  #mevrouw-kok-antwoord8 {
+      overflow: scroll;
+  }
+
+.antwoord-uitleg {
+    margin: 0;
+} 
+
+.toelichting dl {
+    font-size: 1.25em;
+    line-height: 1.65em;
+    margin-top: 0;
+}
+
+.toelichting dt {
+    font-weight: bold;
+}
+
+.toelichting p {
+    margin-top: 0;
+}
+
+
+.symtoom {
+    width: 280px; 
+    height: 100px; 
+    border-radius: 10px; 
+    padding: 10px;
+    background-color: white;
+    position: relative;
+
+}
+
+.eerste-vraag {
+    margin-bottom: 2em;
+}
+
+.tweede-vraag {
+    margin-bottom: 2em;
+}
+
+.witte-subheader{
+    font-size: 1.250em;
+    font-weight: 400;
+}
+
+.antwoord-textfield {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.antwoord-textfield > label {
+    width: 100%;
+}
+
+.antwoord-textfield1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.antwoord-textfield1 > label {
+    width: 100%;
+}
+
+
+.antwoord-textfield {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.antwoord-textfield > label {
+    width: 100%;
+}
+
+.antwoord-textfield1 > label {
+    width: 100%;
+}
+    
+.vraag{
+    display: inline-block;
+}
+
+
+
+  .grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+    margin-bottom: 5%;
+    margin-top: 0;
+  }
+
+  .grid-container-toelichting {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 46% 46%;
+    column-gap: 8%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .grid-container-uitleg-antwoord {
+    width: 100%;
+    min-height: 30vh;
+    display: grid;
+    grid-template-columns: 46% 46%;
+    column-gap: 8%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .grid-container-conversatie {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 46% 46%;
+    grid-template-rows: auto auto; 
+    column-gap: 8%;
+    row-gap: 8%;
+  } 
+
+  .grid-container-line {
+    width: 100%;
+    display: flex;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: repeat(9, 3.5em);
+    column-gap: 20%;
+    row-gap: 0.5em;
+    justify-content: space-between;
+  }
+
+  .grid-item {
+    margin-top: 0;
+    width: 100%;
+  }
+
+.grid-item2 {
+    margin: 0;
+}
+
+.driehoek-wit-conversatie {
+    width: 1em;
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+}
+  
+  .bloeddruk-vraag input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+  
+  .bloeddruk-vraag label {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      background-color: white;
+      color: black;
+      padding: 0.5em;
+      padding-left: 0;
+      margin-top: 0.625em;
+      margin-bottom: 1em;
+      font-size: 1.250em;
+      border-radius: 10px;
+      border: 1px solid #00257A;
+  }
+
+  .bloeddruk-vraag label:first-of-type {
+      margin-top: 1.5em;
+  }
+
+  .bloeddruk-vraag label:last-of-type {
+      margin-bottom: 0;
+  }
+  
+
+  .bloeddruk-vraag label > img {
+      width: 0.875em;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    order: -1;
+  }
+  
+  .bloeddruk-vraag label:hover {
+    background-color: #A7C1FF;
+  }
+  
+  
+  .bloeddruk-vraag input[type="radio"]:checked + label {
+      background-color: #00257A;
+      color: white;
+  }
+  
+
+  #portret-klein{
+      width: 15vw;
+      margin-left: 15vw; 
+      position: absolute; 
+      bottom: 0; 
+      left: 0;
+  }
+
+  #portret-groot{
+    height: 80vh;
+    margin-left: 15vw; 
+    bottom: 0; 
+    left: 0;
+    position: absolute;
+}
+
+  
+
+.full-background{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #009B74;
+}
+
+.bloeddruk-antwoord{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 0.1em;
+    padding-left: 1em;
+    margin: 10px;
+    line-height: 40px;
+    border: none;
+}
+
+#txtBovendruk1::placeholder {
+    color: #E0DED8;
+}
+
+#invoering-sondedraad-nieuw::placeholder {
+    color: #E0DED8;
+}
+
+.aligner{
+    width: 40%;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 70vh;
+    display: flex;
+}
+
+.aligner-antwoorden {
+    width: 40%;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 70vh;
+    display: flex;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 3px;
+    
+    transition: width 500ms ease-in-out;
+}
+
+#time{
+    color: red;
+}
+
+@media (min-width: 30em) {
+    header {
+        width: 130%;
+    }
+
+    .slapend-scherm-header {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .kleuren {
+        font-size: 2.5em;
+    }
+
+    .h1-driehoek-blauw {
+        width: 2vw;
+        margin-right: 0.7vw;
+    }
+    
+    .button-1 {
+        font-size: 1em;
+    }
+
+    .button-2 {
+        width: 25vw;
+        font-size: 1em;
+    }
+
+    .button-3 {
+        font-size: 1em;
+    }
+
+    .button-4 {
+        width: 25vw;
+        font-size: 1em;
+    }
+
+    .uitleg .button-1 {
+        width: 25vw;
+    }
+
+    .antwoordBubbel1 {
+        font-size: 1em;
+    }
+
+    .antwoordBubbel2 {
+        font-size: 1em;
+    }
+
+    .antwoordBubbel3 {
+        font-size: 1em;
+    }
+
+    .antwoordBubbel4 {
+        font-size: 1em;
+    }
+
+    .antwoordBubbel5 {
+        font-size: 1em;
+        width: 35vw;
+        right: 10vw;
+    }
+
+    .antwoordBubbel6 {
+        font-size: 1em;
+    }
+
+    .casussen {
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        column-gap: 2%;
+        row-gap: 4%;
+    }
+
+
+    .blok-casus {
+        padding: 1.5em;
+        padding-top: 0;
+    }
+
+    .blok-casus p:first-of-type {
+        font-size: 1em;
+        margin: 0;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .blok-casus hr:last-of-type {
+        margin: 0;
+    }
+
+    .blok-casus > img {
+        width: calc(100% + 1.5em + 1.5em);
+        margin-left: -1.5em;
+  }
+
+  #portret-groot {
+      height: 70vh;
+  }
+
+  .bloeddruk-vraag h2 {
+    margin-top: 2em;
+}
+
+  .bloeddruk-vraag label {
+      font-size: 1em;
+  }
+
+  .antwoord-textfield > label {
+      font-size: 1em;
+  }
+
+  .antwoord-textfield1 > label {
+    font-size: 1em;
+}
+  .antwoord-onderdruk > label {
+      font-size: 1em;
+  }
+
+  .toelichting dt {
+      font-size: 1em;
+  }
+
+  .toelichting dl {
+      font-size: 1em;
+  }
+
+  .grid-container-toelichting {
+      margin-bottom: 10vh;
+  }
+
+  .grid-container-uitleg-antwoord {
+      margin-bottom: 10vh;
+  }
+
+  .aligner-antwoorden {
+      width: 45%;
+  }
+
+  .aligner {
+      width: 45%;
+  }
+
+}
+
+@media (min-width: 80em) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+
+    .kleuren {
+        font-size: 3.5em;
+    }
+
+    .antwoord-textfield > label {
+        font-size: 1.25em;
+    }
+
+    .witte-subheader {
+        font-size: 1.25em
+    }
+
+    input[type="text"] {
+        font-size: 1.25em;
+    }
+
+    .blok-casus p:first-of-type {
+        font-size: 1em;
+    }
+    
+    .button-1 {
+        font-size: 1.25em;
+    }
+
+    .button-2 {
+        width: 25vw;
+        font-size: 1.25em;
+    }
+
+    .button-3 {
+        font-size: 1.25em;
+    }
+
+    .button-4 {
+        width: 25vw;
+        font-size: 1.25em;
+    }
+
+    .uitleg .button-1 {
+        width: 25vw;
+        font-size: 1.25em;
+    }
+
+    .terug {
+        font-size: 1.25em;
+    }
+
+    .terug-wit {
+        font-size: 1.25em;
+        left: 3em;
+    }
+
+    .stop {
+        font-size: 1.25em;
+    }
+
+    .stop-wit {
+        font-size: 1.25em;
+        left: 3em;
+    }
+
+    .antwoordBubbel1 {
+        font-size: 1.25em;
+    }
+
+    .antwoordBubbel2 {
+        font-size: 1.25em;
+    }
+
+    .antwoordBubbel3 {
+        font-size: 1.25em;
+    }
+
+    .antwoordBubbel4 {
+        font-size: 1.25em;
+    }
+
+    .antwoordBubbel5 {
+        font-size: 1.25em;
+    }
+
+    .antwoordBubbel6 {
+        font-size: 1.25em;
+    }
+
+    .antwoordBubbel6:after {
+        margin-bottom: -0.5em;
+    }
+
+    .casussen {
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        column-gap: 2%;
+        row-gap: 4%;
+    }
+
+  blok-casus p:first-of-type {
+      font-size: 1.5em;
+  }
+
+  #portret-groot {
+      height: 70vh;
+  }
+
+  #portret-klein {
+      width: 12vw;
+  }
+
+  #img-uitleg {
+      height: 20vh;
+  }
+
+
+  .bloeddruk-vraag h2 {
+    margin-top: 1.25em;
+}
+
+  .bloeddruk-vraag label {
+      font-size: 1.25em;
+  }
+
+  .antwoord-bovendruk > label {
+      font-size: 1.25em;
+  }
+  .antwoord-onderdruk > label {
+      font-size: 1.25em;
+  }
+
+  .toelichting dl {
+      font-size: 1.25em;
+  }
+
+  .grid-container-toelichting {
+      margin-bottom: 10vh;
+  }
+
+  .grid-container-uitleg-antwoord {
+      margin-bottom: 10vh;
+  }
+
+  .bloeddruk-antwoord {
+      font-size: 1.25em;
+  }
+
+  .aligner-antwoorden {
+      width: 45%;
+  }
+
+  .aligner {
+      width: 45%;
+  }
+
+} 
+
+@media (min-width: 110em) {   
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    .kleuren {
+        font-size: 4em;
+    }
+
+    .h1-driehoek-blauw {
+        width: 1.5vw;
+    }
+
+    .antwoord-textfield > label {
+        font-size: 1.4em;
+    }
+
+    .witte-subheader {
+        font-size: 1.4em;
+    }
+
+    input[type="text"] {
+        font-size: 1.4em;
+    }
+    
+    .blok-casus p:first-of-type {
+        font-size: 1.4em;
+    }
+
+    .button-1 {
+        font-size: 1.4em;
+    }
+
+    .button-2 {
+        width: 25vw;
+        font-size: 1.4em;
+    }
+
+    .button-3 {
+        font-size: 1.4em;
+    }
+
+    .button-4 {
+        width: 25vw;
+        font-size: 1.4em;
+    }
+
+    .uitleg .button-1 {
+        width: 25vw;
+        font-size: 1.4em;
+    }
+
+    .terug {
+        font-size: 1.4em;
+    }
+
+    .terug-wit {
+        font-size: 1.4em;
+        left: 3em;
+    }
+
+    .stop {
+        font-size: 1.4em;
+    }
+
+    .stop-wit {
+        font-size: 1.4em;
+        left: 3em;
+    }
+
+    .antwoordBubbel1 {
+        font-size: 1.4em;
+    }
+
+    .antwoordBubbel2 {
+        font-size: 1.4em;
+    }
+
+    .antwoordBubbel2 > p {
+        font-size: 1em;
+        margin-top: 0;
+    }
+
+    .antwoordBubbel3 {
+        font-size: 1.4em;
+    }
+
+    .antwoordBubbel4 {
+        font-size: 1.4em;
+    }
+
+    .antwoordBubbel5 {
+        font-size: 1.4em;
+    }
+
+    .antwoordBubbel6 {
+        font-size: 1.4em;
+    }
+
+    .casussen {
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        column-gap: 2%;
+        row-gap: 4%;
+    }
+
+  blok-casus p:first-of-type {
+      font-size: 1.4em;
+  }
+
+  #portret-groot {
+      height: 70vh;
+  }
+
+  #img-uitleg {
+      height: 40vh;
+  }
+
+
+  .bloeddruk-vraag h2 {
+    margin-top: 1.4em;
+}
+
+  .bloeddruk-vraag label {
+      font-size: 1.4em;
+  }
+
+  .antwoord-bovendruk > label {
+      font-size: 1.4em;
+  }
+  .antwoord-onderdruk > label {
+      font-size: 1.4em;
+  }
+
+  .toelichting dl {
+      font-size: 1.4em;
+  }
+
+  .grid-container-toelichting {
+      margin-bottom: 10vh;
+  }
+
+  .grid-container-uitleg-antwoord {
+      margin-bottom: 10vh;
+  }
+
+  .bloeddruk-antwoord {
+      font-size: 1.4em;
+  }
+
+  .aligner-antwoorden {
+      width: 45%;
+  }
+
+  .aligner {
+      width: 45%;
+  }
+
+} 
